@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --lexend-deca: 'Lexend Deca', sans-serif;
+    --big-shoulders-display: 'Big Shoulders Display', cursive;
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    font-family: var(--lexend-deca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 915px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    width: fit-content;
+}
+
+h1 {
+    color: var(--white);
+    font-family: var(--big-shoulders-display);
+}
+
+button {
+    padding: 15px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    transition-duration: 0.5s;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+#container-sedans {
+    background-color: var(--bright-orange);
+}
+
+#container-suvs {
+    background-color: var(--dark-cyan);
+}
+
+#container-luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+#container-sedans button{
+    color: var(--bright-orange);
+}
+
+#container-suvs button{
+    color: var(--dark-cyan);
+}
+
+#container-luxury button{
+    color: var(--very-dark-cyan);
+}
+
+p {
+    color: var(--transparent-white);
+    line-height: 25px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 48px;
+}
+
+@media (max-width: 650px) {
+    main {
+        grid-template-columns: 1fr;
+        width: 325px;
+        height: 1340px;
+    }
+}
