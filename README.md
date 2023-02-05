@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/skoskr/3-column-preview-card-component-solution)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://glistening-gumption-56af41.netlify.app)
 
 ## My process
 
